@@ -23,19 +23,19 @@ const onSubmit = (e) => {
   return (
     <form className='add-form' onSubmit={onSubmit}>
       <div className='form-control'>
-        <label>Task</label>
+        <label>What are you going to get done?</label>
         <input 
         type='text' 
-        placeholder='Add Task'
+        placeholder='Add an objective'
         value={text} 
         onChange={(e) => setText(e.target.value)} 
         />
       </div>
       <div className='form-control'>
-        <label>Day & Time</label>
+        <label>When will it be completed?</label>
         <input 
         type='text' 
-        placeholder='Add Day & Time'
+        placeholder='Add a deadline'
         value={day} 
         onChange={(e) => setDay(e.target.value)} 
         />
@@ -50,7 +50,7 @@ const onSubmit = (e) => {
         />
       </div>
 
-      <input type='submit' value='Save Task' className='btn btn-block' />
+      <input type='submit' value='Set Objective' className='btn btn-block' />
     </form>
   )
 }

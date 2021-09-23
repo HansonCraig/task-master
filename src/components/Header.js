@@ -6,8 +6,8 @@ const Header = ({ title, onAdd, showAdd }) => {
     <header className='header'>
       <h1>{title}</h1>
       <Button 
-      color={showAdd ? 'red' : 'green'} 
-      text={showAdd ? 'Closed' : 'Add'} 
+      color={showAdd ? '#c90249' : '#02ADC9'} 
+      text={showAdd ? 'Close' : 'Add'} 
       onClick={onAdd} 
       />
     </header>
@@ -15,7 +15,7 @@ const Header = ({ title, onAdd, showAdd }) => {
 }
 
 Header.defaultProps = {
-  title: 'Task Master',
+  title: 'Make It Happen',
 }
 
 Header.propTypes = {
